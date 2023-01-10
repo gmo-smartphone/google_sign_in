@@ -266,8 +266,7 @@ static FlutterError *getFlutterError(NSError *error) {
       @"displayName" : user.profile.name ?: [NSNull null],
       @"email" : user.profile.email ?: [NSNull null],
       @"id" : user.userID ?: [NSNull null],
-      @"photoUrl" : [photoUrl absoluteString] ?: [NSNull null],
-      @"serverAuthCode" : user.serverAuthCode ?: [NSNull null]
+      @"photoUrl" : [photoUrl absoluteString] ?: [NSNull null]
     }
                       result:result
                        error:nil];
